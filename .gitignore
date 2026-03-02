@@ -1,0 +1,45 @@
+# --- Компиляция и сборка (CMake, Make, MSVC) ---
+build/
+build-*/
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+*.ilk
+*.pdb
+*.exp
+
+# --- CMake ---
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+CMakeInstallation.cmake
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+
+# --- IDE (Visual Studio, CLion, Qt Creator) ---
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.qtcreator/
+*.user
+
+# --- ОС ---
+.DS_Store
+Thumbs.db
+
+# --- Прочее ---
+*.log
+*.tmp

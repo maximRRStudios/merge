@@ -10,7 +10,7 @@
 #include <direct.h>
 
 // Вспомогательная: безопасное создание директорий
-void makedirs(const char* filepath) {
+void makedirs(char* filepath) {
     char temp[512];
     size_t len;
 

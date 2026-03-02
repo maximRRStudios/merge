@@ -2,8 +2,8 @@
 #define _UTILS_H_63AEA884_67B1_44f3_A6E3_7198F44A50FE_
 
 #include <stdlib.h>
-#include "types.h"
-#include "Exception.h"
+#include <merge/types.h>
+#include <merge/Exception.h>
 #include <math.h>
 
 #ifdef WIN32

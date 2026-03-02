@@ -1,7 +1,7 @@
 #ifndef _FORMATS_H_F56B5C28_1776_4113_A1BA_89B3022EBF42_
 #define _FORMATS_H_F56B5C28_1776_4113_A1BA_89B3022EBF42_
 
-#include "types.h"
+ #include <merge/types.h>
 
 class Formats {
 public: // Common Methods

@@ -1,4 +1,4 @@
-#include "Number.h"
+#include <merge/Number.h>
 
 // Constructor
 Number::Number(byte type, Image* source) {
@@ -15,13 +15,13 @@ Number::~Number(void) {
 	this->number = NULL;
 }
 
-// Установка типа номера
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 Number* Number::setType(byte type) {
 	this->type = type;
 	return this;
 }
 
-// Генерация номера из строки
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 Image* Number::Generate(char* number_string) {
 	this->number = number_string;
 	this->dest = new Image();
@@ -39,7 +39,7 @@ Image* Number::Generate(char* number_string) {
 	}
 }
 
-// Индексы букв для российских номеров
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 byte Number::getIndexRu(char letter) {
 	char let = (char)tolower(letter);
 	for (byte i = 0; i < NUM_RU_COUNT; i++)
@@ -47,7 +47,7 @@ byte Number::getIndexRu(char letter) {
 	return -1;
 }
 
-// Индексы букв для европейских номеров
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 byte Number::getIndexEn(char letter) {
 	char let = (char)tolower(letter);
 	for (byte i = 0; i < NUM_EN_COUNT; i++)

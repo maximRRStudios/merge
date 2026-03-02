@@ -1,4 +1,4 @@
-#include "FileImage.h"
+#include <merge/FileImage.h>
 
 FileImage::FileImage(void) {
 	this->access = 0;

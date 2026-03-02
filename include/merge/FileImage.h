@@ -1,7 +1,7 @@
 #ifndef _FILEIMAGE_H_48F151A7_49F6_4b46_9F54_3C950B4D570F_
 #define _FILEIMAGE_H_48F151A7_49F6_4b46_9F54_3C950B4D570F_
 
-#include "utils.h"
+#include <merge/utils.h>
 #include "PngImage.h"
 #include "JpgImage.h"
 

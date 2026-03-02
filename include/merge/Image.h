@@ -1,11 +1,11 @@
 #ifndef _IMAGE_H_2C6B3087_2E11_481b_A119_F9DBA50CD5F2_
 #define _IMAGE_H_2C6B3087_2E11_481b_A119_F9DBA50CD5F2_
 
-#include "utils.h"
-#include "FileImage.h"
-#include "Layer.h"
-#include "Filters.h"
-#include "num_config.h"
+#include <merge/utils.h>
+#include <merge/FileImage.h>
+#include <merge/Layer.h>
+#include <merge/Filters.h>
+#include <merge/num_config.h>
 
 // Flatten Filters
 #define FROM_IMAGE		0x01

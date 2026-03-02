@@ -2,8 +2,8 @@
 #define _NUMBER_H_
 
 #include <ctype.h>
-#include "num_config.h"
-#include "Image.h"
+#include <merge/num_config.h>
+#include <merge/Image.h>
 
 class Number {
 	byte type;

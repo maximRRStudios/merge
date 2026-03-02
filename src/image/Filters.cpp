@@ -1,4 +1,4 @@
-#include "Filters.h"
+#include <merge/Filters.h>
 
 void Filters::Resize(Layer* layer, size_t scale, byte filter) {
 	size_t width, height;

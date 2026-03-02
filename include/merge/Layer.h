@@ -2,7 +2,7 @@
 #define _LAYER_H_B8447F42_7CBF_4e93_AD2F_F9E6DEBAB727_
 
 #include <stdlib.h>
-#include "utils.h"
+#include <merge/utils.h>
 
 struct RGBA {
 	byte	red,

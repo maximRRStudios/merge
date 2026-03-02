@@ -1,9 +1,9 @@
 #ifndef _FILTERS_H_FB1096E7_4C38_4b35_8390_4B9DAB2F7AB2_
 #define _FILTERS_H_FB1096E7_4C38_4b35_8390_4B9DAB2F7AB2_
 
-#include "utils.h"
-#include "Layer.h"
-#include "Exception.h"
+#include <merge/utils.h>
+#include <merge/Layer.h>
+#include <merge/Exception.h>
 #include <string.h>
 #include <math.h>
 

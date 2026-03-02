@@ -3,10 +3,10 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "libpng/png.h"
-#include "utils.h"
-#include "Formats.h"
-#include "Exception.h"
+#include <png.h>
+#include <merge/utils.h>
+#include <merge/Formats.h>
+#include <merge/Exception.h>
 
 struct PngIhdr {
 	__int32	bit_depth,

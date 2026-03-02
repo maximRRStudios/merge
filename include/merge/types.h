@@ -1,6 +1,9 @@
 #ifndef _TYPES_H_7C432C3E_7FB6_48b4_BDDF_0C7131ECDADA_
 #define _TYPES_H_7C432C3E_7FB6_48b4_BDDF_0C7131ECDADA_
 
+#define ERROR_ACCESS   100
+#define ERROR_INVALID_PATH 102
+
 #define FILE_NULL		0x0
 #define FILE_READ		0x1
 #define FILE_WRITE		0x2
@@ -20,7 +23,6 @@ typedef unsigned short ushort;
 #endif
 
 #ifndef WIN32
-typedef int __int32;
 #include <stddef.h>
 #endif
 

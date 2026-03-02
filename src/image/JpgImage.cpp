@@ -1,4 +1,4 @@
-#include "JpgImage.h"
+#include <merge/JpgImage.h>
 
 JpgImage::JpgImage(void) {
 	this->InitVars();

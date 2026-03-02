@@ -1,10 +1,10 @@
 #ifndef _NUM_CONFIG_H_
 #define _NUM_CONFIG_H_
 
-#include "types.h"
+#include <merge/types.h>
 #include "num_defs.h"
 
-// Координаты букв на картинках
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 static size_t num_config[NUM_TYPE_MAX][NUM_VALUES_MAX] = {
 	{
 		0, 0, 111, 25,
@@ -48,12 +48,12 @@ static size_t num_config[NUM_TYPE_MAX][NUM_VALUES_MAX] = {
 	}
 };
 
-// Индексы букв для российских номеров
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 static char num_ru_index[NUM_RU_COUNT] = {
 	'a', 'b', 'e', 'k', 'm', 'h', 'o', 'p', 'c', 't', 'y', 'x'
 };
 
-// Индексы букв для европейских номеров
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 static char num_en_index[NUM_EN_COUNT] = {
 	'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p',
 	'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l',

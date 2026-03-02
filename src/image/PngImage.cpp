@@ -1,4 +1,4 @@
-#include "PngImage.h"
+#include <merge/PngImage.h>
 
 // Constructors & Destructors
 
@@ -91,25 +91,25 @@ void PngImage::Destroy(void) {
 	this->InitVars();
 }
 
-// Приведение картинок к формату RGBA
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ RGBA
 void PngImage::TransformToRGBA(void) {
 	PngIhdr ihdr = this->getPngIhdr();
 	//png_set_expand_16(this->png_ptr);
-	// 16-битные каналы сужаем до 8 бит
+	// 16-пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ 8 пїЅпїЅпїЅ
 	if (ihdr.bit_depth == 16 && !this->header.hidepth)
 		png_set_strip_16(this->png_ptr);
-	// палитру преобразуем в RGB
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ RGB
 	if (ihdr.color_type == PNG_COLOR_TYPE_PALETTE && ihdr.bit_depth <= 8)
 		png_set_palette_to_rgb(this->png_ptr);
-	// оттенки серого тоже в RGB
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ RGB
 	if (ihdr.color_type == PNG_COLOR_TYPE_GRAY ||
 		ihdr.color_type == PNG_COLOR_TYPE_GRAY_ALPHA)
 		png_set_gray_to_rgb(this->png_ptr);
-	// добавляем полный альфа-канал
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅпїЅ
 	if (png_get_valid(this->png_ptr, this->info_ptr, PNG_INFO_tRNS)) {
 		png_set_tRNS_to_alpha(this->png_ptr);
 	} else png_set_add_alpha(this->png_ptr, 0xFF, PNG_FILLER_AFTER);
-	// апдейтим информацию в библиотеке
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	png_read_update_info(this->png_ptr, this->info_ptr);
 }
 

@@ -3,8 +3,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "types.h"
-#include "Formats.h"
+#include <merge/types.h>
+#include <merge/Formats.h>
 
 class JpgImage : public Formats {
 	FILE* file;

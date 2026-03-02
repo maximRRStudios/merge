@@ -1,4 +1,4 @@
-#include "Exception.h"
+#include <merge/Exception.h>
 
 Exception::Exception(void) {
 	this->code = 0;
